@@ -28,16 +28,6 @@
 
   initializeRateReduct();
 
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pa-discount-card",
-      scrub: 2,
-      markers: false,
-      start: "top 70%",
-      end: "top 30%",
-    },
-  }).to(numint, { var: 1, onUpdate: updateNumbers });
-
   function updateNumbers() {
     var countdownYearValue = Math.min(Math.floor(numint.var * maxYearVal) + 1, maxYearVal);
     var countdownRateValue = Math.min((numint.var * maxRateVal) + 0.01, maxRateVal);
