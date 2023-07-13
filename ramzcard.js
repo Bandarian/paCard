@@ -1,14 +1,3 @@
-var cookieName = 'modalClosed';
-
-  if (!Cookies.get(cookieName)) { 
-      $('.top-notification-bar').show(); 
-     }
-    $('.banner-close-cookie').on('click', function(){
-  Cookies.set(cookieName, 'alert', {expires: 1, sameSite: 'none', secure: true});
- })
-</script>
-
-<script>
   var maxRateVal = 0.3;
   var maxYearVal = 30;
   var numint = { var: 0 };
